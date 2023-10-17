@@ -7,11 +7,11 @@
         public Circle(double radius)
         {
 
-            throw new ArgumentException("Радиус не может быть бесконечностью.");
+            //throw new ArgumentException("Радиус не может быть бесконечностью.");
 
-            if (radius <= 0 || double.IsInfinity(radius))
+            if (double.IsInfinity(radius))
             {
-                throw new ArgumentException("Радиус должен быть положительным конечным числом.");
+                throw new ArgumentException("Радиус не может быть бесконечностью.");
 
             }
 
@@ -23,9 +23,8 @@
 
             Radius = radius;
 
+
         }
-
-
 
         public double Area => CalculateArea();
 

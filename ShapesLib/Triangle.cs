@@ -8,7 +8,7 @@
 
         public Triangle(double sideA, double sideB, double sideC)
         {
-<<<<<<< HEAD
+
             if (sideA <= 0 || sideB <= 0 || sideC <= 0)
             {
                 throw new ArgumentOutOfRangeException("Длина стороны должна быть положительным числом.");
@@ -31,13 +31,13 @@
             }
 
 
-=======
-           if (sideA <= 0 || sideB <= 0 || sideC <= 0)
-            {
-                throw new ArgumentException("Длина стороны должна быть положительным числом.");
-            }
 
->>>>>>> a6a94058b04337d532536359107724aa52316cbf
+           //if (sideA <= 0 || sideB <= 0 || sideC <= 0)
+           // {
+           //     throw new ArgumentException("Длина стороны должна быть положительным числом.");
+           // }
+
+
             if (!IsTriangleValid(sideA, sideB, sideC))
             {
                 throw new ArgumentException("Такого треугольника не существует.");
@@ -52,35 +52,35 @@
 
         private double CalculateArea()
         {
-<<<<<<< HEAD
+
             var perimeter = (SideA + SideB + SideC) / 2;
             return Math.Round(Math.Sqrt(perimeter * (perimeter - SideA) * (perimeter - SideB) * (perimeter - SideC)), 2);
-=======
-           var perimeter = (SideA + SideB + SideC) / 2;
-           return Math.Round(Math.Sqrt(perimeter * (perimeter - SideA) * (perimeter - SideB) * (perimeter - SideC)), 2);
->>>>>>> a6a94058b04337d532536359107724aa52316cbf
+//=======
+//           var perimeter = (SideA + SideB + SideC) / 2;
+//           return Math.Round(Math.Sqrt(perimeter * (perimeter - SideA) * (perimeter - SideB) * (perimeter - SideC)), 2);
+//>>>>>>> a6a94058b04337d532536359107724aa52316cbf
         }
 
         public bool IsRectangular()
         {
-<<<<<<< HEAD
+
             return IsTriangleRectangular(SideA, SideB, SideC);
-=======
-           return IsTriangleRectangular(SideA, SideB, SideC);
-        }
+//=======
+//           return IsTriangleRectangular(SideA, SideB, SideC);
+//        }
 
-        private bool IsTriangleValid(double a, double b, double c)
-        {
-            return a + b > c && a + c > b && b + c > a;
-        }
+//        private bool IsTriangleValid(double a, double b, double c)
+//        {
+//            return a + b > c && a + c > b && b + c > a;
+//        }
 
-        private bool IsTriangleRectangular(double a, double b, double c)
-        {
-            var sides = new double[] { a, b, c };
-            Array.Sort(sides);
+//        private bool IsTriangleRectangular(double a, double b, double c)
+//        {
+//            var sides = new double[] { a, b, c };
+//            Array.Sort(sides);
 
-            return Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
->>>>>>> a6a94058b04337d532536359107724aa52316cbf
+//            return Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
+//>>>>>>> a6a94058b04337d532536359107724aa52316cbf
         }
 
         private bool IsTriangleValid(double a, double b, double c)
