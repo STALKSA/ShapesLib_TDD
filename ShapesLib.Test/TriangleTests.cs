@@ -6,8 +6,6 @@ namespace ShapesLib.Test
     {
 
         [Fact]
-
-
         public void Triangle_Is_Created()
         {
             // Arrange

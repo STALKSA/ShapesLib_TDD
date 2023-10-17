@@ -31,7 +31,6 @@
             }
 
 
-
             if (!IsTriangleValid(sideA, sideB, sideC))
             {
                 throw new ArgumentException("Такого треугольника не существует.");

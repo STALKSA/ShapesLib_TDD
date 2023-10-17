@@ -6,9 +6,6 @@
 
         public Circle(double radius)
         {
-
-
-
             if (double.IsInfinity(radius))
             {
                 throw new ArgumentException("Радиус не может быть бесконечностью.");
@@ -22,7 +19,6 @@
             }
 
             Radius = radius;
-
 
         }
 
